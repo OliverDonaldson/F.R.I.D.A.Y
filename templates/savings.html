@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block title %}Savings{% endblock %} {% block content %} 
+<style> 
+h1 {
+    color: #fff;
+} 
+p {
+    color: #fff;
+}
+
+     section {
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) } 
+
+.header {
+  padding: 70px;
+  text-align: center;
+  background: #323232; 
+  color:#f1f1f1;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+</style>
+
+
+<div class="header">
+  <h1 align="center">Savings Goals</h1>
+  <p>Here you can put in an idea of yours or a possible savings goal you have in mind</p> 
+<p>You can make as many as you like and they will be here when you come back</p>
+</div>
+<ul class="list-group list-group-flush" id="notes">
+  {% for note in user.notes %}
+  <li class="list-group-item">
+    {{ note.data }}
+    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </li>
+  {% endfor %}
+</ul>
+<form method="POST">
+  <textarea name="note" id="note" class="form-control" placeholder="New Computer Price:$2000"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add Note</button>
+  </div>
+</form>
+
+{% endblock %} 

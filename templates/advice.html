@@ -1,0 +1,208 @@
+{% extends "base.html" %} {% block title %}Advice{% endblock %} {% block content %} 
+<html>
+<head>
+<style>
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #323232; 
+  color:#f1f1f1;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.205);
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card1 {
+  background-color: #b39700;
+  padding: 20px;
+  margin-top: 20px; 
+  color:#f1f1f1;
+}
+.card2 {
+  background-color: #323232;
+  padding: 20px;
+  margin-top: 20px; 
+  color:#f1f1f1;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(221, 221, 221, 0.678);
+  margin-top: 20px; 
+
+}
+
+  body {
+      background-color: #efefef;
+  }
+  
+  .container {
+      background-color: rgba(0, 0, 0, 0.205);
+      margin: auto;
+      padding: 15px;
+      box-shadow: 0 2px 20px #001, 0 1px 6px #001;
+      border-radius: 5px;
+      overflow-x: auto;
+  }
+  
+  ._table {
+    width: 100%;
+      border-collapse: collapse;
+  }
+  
+  ._table :is(th, td) {
+      border: 1px solid #0002;
+      padding: 8px 10px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Advice</h1>
+  <p>This is a page on providing you with infomation on ways of saving money</p>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h2>Set yourself saving Goals:</h2>
+      <p>It can be hard to save when you’ve got nothing to aim for. So set some savings goals for the future, 
+        both short and long term, to help you focus and keep you motivated.</p>
+        <ul>
+            <li>Short-term goals are smaller, and could include saving for a car, holiday or even a bigger TV.</li>
+            <li>Long-term goals are larger, and could be saving for a house deposit or retirement.</li>
+        </ul>
+    <p>To help you reach your goals you may like to create a budget so you can keep track of your finances 
+        and work out how much you can afford to save.</p>
+    </div>
+    <div class="card2">
+      <h2>Make savings automatic:</h2>
+      <p>It’s easier to save when you don’t have to think about it. So set up an automatic payment that goes 
+        into your savings account every pay-day and pay yourself first. It's a great way of making savings 
+        a normal part of managing your money.</p>
+     <p>You could also name your savings account whatever your goal is ('Holiday' or 'House' for example) 
+        to keep your goal more real.</p>
+    </div>
+    <div class="card1">
+      <h2>Save your change:</h2>
+      <p>Save the Change is a clever way to help you save while you spend.It automatically rounds up electronic 
+        transactions to an amount you choose, then transfers the difference into your savings account. 
+        You probably won’t even notice you’re saving as you’re spending.</p>
+    </div> 
+    <div class="card2">
+      <h2>Pay the bills on time:</h2>
+      <p>Some companies give their customers an early payment discount that saves you money just by paying your bill on time. 
+        Others may have a late payment fee – which charges you more for paying your bill late.</p>
+      <p>You can save money just by paying your bill on time. Simply set up an automatic payment 
+        (for regular payment amounts) or direct debit (for irregular amounts) and your bills will be 
+        paid automatically every time on the due date.</p>
+      <p>If you're paying by automatic payment make sure you check your bills each month in 
+        case you need to top it up or increase your regular payment amount.</p>
+    </div> 
+    <div class="card1">
+      <h2>Avoid impulse spending:</h2>
+      <h5>(Quick buys)</h5> 
+      <p>You’ve seen this cool jacket or high-tech gadget and you’ve just got to have it. 
+        Or perhaps it's that latest and greatest toy your kids have been pestering you for. 
+        It's easy to make the purchase without thinking too much about it, but taking a little extra time is always a good idea.</p>
+      <p>Avoiding impulse purchases is one of the first steps to good money management. 
+        It's a good idea to wait 30 days before you spend. After a month has passed your urge to 
+        spend may have already passed as well, and you’ll have saved money just by waiting.</p>
+      <p>Or, instead, why not put the cost of the item into a savings account? 
+        As you see your savings grow you’ll soon realise how much money can actually be spent on impulse buys.</p>
+    </div> 
+    <div class="card2">
+      <h2>Cancel unused memberships and subscriptions:</h2>
+      <p>Do you have a gym membership or magazine subscription? If you’re not using that membership 
+        or subscription, it may be a good idea to cancel it or find a cheaper plan that better suits you.</p>
+      <p>Even if you use it occasionally, you may still be better off cancelling and paying as you go. 
+        Here’s how you can work out whether it’s worth cancelling your membership or subscription:</p> 
+        <br></br>
+      <p align="center">Monthly cost of membership/subscription</p> 
+      <p align="center">÷</p>  
+      <p align="center">Average number of times you use your membership/subscription each month</p> 
+        <br></br> 
+      <p>This will give you the price you pay each time you use your membership/subscription. 
+        If this amount is more than the casual rate it may be time to cancel that membership or 
+        subscription and pay as you go.</p>
+    </div> 
+    <div class="card1">
+      <h2>Make healthy choices which help you save:</h2>
+      <p>Quitting smoking, avoiding takeaways, or passing on that morning flat white could be healthy 
+        for both you and your savings goal. One fewer coffee a day could save you about $25 a week, 
+        and if you smoke a pack a day and quit you'll save approximately $7,400 a year!</p>
+      <p>Seeing your savings go up like this can also help motivate you to stick to your health goals. It's a win-win for you.</p>
+    </div> 
+    <div class="card2">
+      <h2>Never give up:</h2> 
+      <p>We know saving money can take a lot of will power, sacrifice and focus. But once you get the hang of it, it becomes 
+        easier – and in the future, you’ll be thankful you started saving when you did.</p>
+      <p>Take time to follow money management blogs and read lots. If you find you've stopped saving or don't 
+        save as regularly as you've planned, take a deep breath, figure out where it's not working for you and start again. You will get there.</p>
+    </div>  
+    </div>
+  <div class="rightcolumn">
+    <div class="card2">
+      <h2>Links</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="/savings">Savings</a>
+          </li> 
+          <li>
+            <a href="/assistant">Assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="card2">
+      <h3>Follow Me</h3>
+      <p>instagram: @oliver.1dno5</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer"> 
+  <P>contact me </P> 
+  <p>email: ollie.donaldson@outlook.com</p> 
+  <p>phone: +64 02102678943</p>
+</div>
+
+</body>
+</html>
+
+{% endblock %}
