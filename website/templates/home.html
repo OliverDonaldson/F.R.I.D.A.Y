@@ -1,0 +1,137 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%} 
+<html>
+<head>
+<style>
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 70px;
+  text-align: center;
+  background: #323232; 
+  color:#f1f1f1;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.205);
+  padding-left: 20px;
+}
+
+
+/* Card */
+
+.card {
+  background-color: #323232;
+  padding: 20px;
+  margin-top: 20px; 
+  color:#f1f1f1;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(221, 221, 221, 0.678);
+  margin-top: 20px; 
+
+}
+
+  body {
+      background-color: #efefef;
+  }
+  
+  .container {
+      background-color: rgba(0, 0, 0, 0.205);
+      margin: auto;
+      padding: 15px;
+      box-shadow: 0 2px 20px #001, 0 1px 6px #001;
+      border-radius: 5px;
+      overflow-x: auto;
+  }
+  
+  ._table {
+    width: 100%;
+      border-collapse: collapse;
+  }
+  
+  ._table :is(th, td) {
+      border: 1px solid #0002;
+      padding: 8px 10px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to F.R.I.D.A.Y</h1>
+  <p>Thank God its Friday, your personal savings assistant and supporter</p>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How to work you way around the website</h2>
+     <p>This webiste is created in a way in which all users can be happy.</p> 
+     <p>First there is the advice page which can provide you with info on saving money and differnt ways in achiving your finaicial goals</p> 
+     <p>Next is the Savings page, there you can write little memeos and Goals to help remind you of things you wish to achive or save for in future</p> 
+     <p>Lastly is the assistant page, here you can talk to a virtual copmuter generated voice assistant. The assistant can answer a few questions you may have and help direct you around the website</p>
+    </div>
+    </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Links</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="/savings">Savings</a>
+          </li> 
+          <li> 
+            <a href="/assistant">Assistant</a> 
+          </li> 
+          <li>
+            <a href="/advice">Advice</a>
+          </li> 
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="footer"> 
+  <P>contact me </P> 
+  <p>email: ollie.donaldson@outlook.com</p> 
+  <p>phone: +64 02102678943</p>
+</div>
+
+</body>
+</html>
+    {% endblock %}
+  
+
+    <!-- 
+    navbar is set to top so therefore cant see below 20px from the top
+ -->
