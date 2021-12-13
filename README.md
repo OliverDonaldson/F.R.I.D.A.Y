@@ -11,7 +11,7 @@ The login and signup pages had the most unique design, a more simplistic design.
 
 I had a variety of design ideas for this website. Most of the design was divided into 3 different design styles. Colourful and attractive, simple and classy, plain and dark. The colourful and attractive pages where the welcome, home, about, and assistant pages. The idea for this design was to attract attention and give a more approachable feel to it, with the use of warm colours this helped with this specific design. The login and signup pages have a simple and classy look, this was to signify a more important and serious feel to the pages. The advice and savings page were created with plain and cooler colours. Cool colours are thought to be calming, relaxing, and reserved. Cool colours are harmonious and trustworthy and can even be used at neutrals against sharper colour choices such as the welcome and home pages. Blue is the inly primary colour on the cool side of the colour wheel, meaning every cool hue indicates some variant of blue. The website has a trend of the use of blue colour and some inspiration was taken from a New Zealand stocks website which also has a cool colour trend to it. 
 
-Overall the website was designed to be welcoming and easy to use with a safe enviroment for all users.
+Overall, the website was designed to be welcoming and easy to use with a safe enviroment for all users.
 
 Created by: Oliver Donaldson 
   2021
